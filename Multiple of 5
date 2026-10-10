@@ -1,0 +1,6 @@
+N = int(input())
+for i in range(N):
+    M = int(input())
+    if M%5 == 0:
+        break
+    print(M)
