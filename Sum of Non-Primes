@@ -1,0 +1,15 @@
+N = int(input())
+sum = 0
+for i in range(N):
+    M = int(input())
+    if M < 2:
+        sum += M 
+    else:
+        is_prime = True
+        for j in range(2, int(M**0.5)+1):
+            if (M % j == 0):
+                is_prime = False
+                break
+        if not is_prime:
+            sum += M 
+print(sum)
