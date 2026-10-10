@@ -1,0 +1,8 @@
+N = int(input())
+k = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+for i in range(N):
+    space = N-i-1
+    row = "  " * space 
+    for j in range(i+1):
+        row += k[j] + " "
+    print(row)
