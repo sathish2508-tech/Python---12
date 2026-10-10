@@ -1,0 +1,7 @@
+string = input()
+smallest = string[0]
+lenght = len(string)
+for index in range(1, lenght):
+    if ord(string[index]) < ord(smallest):
+        smallest = string[index]
+print(smallest)
