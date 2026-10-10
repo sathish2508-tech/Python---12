@@ -1,0 +1,13 @@
+word = input()
+first_word = word[0]
+sentance = first_word.lower()
+lenght = len(word)
+for char in range(1, lenght):
+    remain_string = word[char]
+    uppercase= remain_string.upper()
+    lowercase = remain_string.lower()
+    if remain_string == uppercase:
+        sentance += "_" + lowercase
+    else:
+        sentance += lowercase
+print(sentance)
