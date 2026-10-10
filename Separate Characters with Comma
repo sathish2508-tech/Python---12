@@ -1,0 +1,7 @@
+word = input()
+each_chr_cama = ""
+for i in range(len(word)):
+    each_chr_cama += word[i]
+    if i != len(word)-1:
+        each_chr_cama += ","
+print(each_chr_cama)
