@@ -1,0 +1,28 @@
+N = int(input())
+ascii_val = 65
+for i in range(N):
+    space = N-i-1
+    hspace = 2*(i)-1 
+    line = " " * space
+    if i == 0:
+        line += chr(ascii_val)
+        ascii_val += 1
+    else:
+        line += chr(ascii_val)
+        line += " " * hspace
+        line += chr(ascii_val + 1)
+        ascii_val += 2 
+    print(line)
+ascii_val -= 2
+for i in range(N-2,-1,-1):
+    space = N-i-1
+    hspace = 2*(i)-1 
+    line = " " * space
+    if i == 0:
+        line += chr(ascii_val-1)
+    else:
+        line += chr(ascii_val-2)
+        line += " " * hspace
+        line += chr(ascii_val-1)
+    print(line)
+    ascii_val -= 2 
