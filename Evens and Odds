@@ -1,0 +1,11 @@
+M = int(input())
+N = int(input())
+odd = 0
+even = 0
+for i in range(M, N + 1):
+    if (i%2) == 0:
+        even += 1 
+    if (i%2) != 0:
+        odd += 1 
+print(odd)
+print(even)
