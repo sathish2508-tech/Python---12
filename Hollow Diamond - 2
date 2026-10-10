@@ -1,0 +1,20 @@
+N = int(input())
+k = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+M = 2*(N)-1
+for i in range(M):
+    if i < N:
+        if i == 0:
+            space = N-i-1
+            print(" " * space + k[i])
+        else:
+            space = N-i-1
+            hspace = 2*(i)-1
+            print(" " * space + k[i] + " " * hspace + k[i])
+    else:
+        if i == M-1:
+            space = i-(N-1)
+            print(" " * space + k[(M-1)-i])
+        else:
+            space = i-(N-1)
+            hspace = 2*(M-2-i)+1
+            print(" " * space + k[(M-1)-i] + " " * hspace + k[(M-1)-i])
