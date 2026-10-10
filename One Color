@@ -1,0 +1,12 @@
+S = input()
+count_R = 0 
+count_G = 0 
+for char in S:
+    if char == "R":
+        count_R += 1 
+    else:
+        count_G += 1 
+if (count_R > count_G):
+    print(count_G)
+else:
+    print(count_R)
