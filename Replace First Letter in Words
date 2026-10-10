@@ -1,0 +1,11 @@
+s = input()
+words = s.split()
+result = ""
+for i in range(len(words)):
+    word = words[i]
+    if word:
+        first_letter = word[0]
+        replace_letter = chr(ord(first_letter)+1)
+        modified_word = replace_letter + word[1:] + " "
+        result += modified_word
+print(result)
