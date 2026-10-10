@@ -1,0 +1,9 @@
+word = input()
+for char in word:
+    word_value = ord(char)
+    var_name = (65 <= word_value and 90 >= word_value) or (97 <= word_value and 122 >= word_value) or (48 <= word_value and 57 >= word_value)
+    valid = True
+    if not var_name:
+        valid = False
+        break
+print(valid)
