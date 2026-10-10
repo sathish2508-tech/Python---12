@@ -1,0 +1,8 @@
+word = input()
+first_char = word[0]
+first_char_value = ord(first_char)
+lower_word = (first_char_value >= 65 and first_char_value <= 90)
+upper_word = (first_char_value >= 97 and first_char_value <= 122)
+undersore = first_char == "_"
+valid = lower_word or upper_word or undersore
+print(valid)
