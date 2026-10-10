@@ -1,0 +1,5 @@
+S = input()
+for char in S:
+    if char == char.upper():
+        break
+print(ord(char))
