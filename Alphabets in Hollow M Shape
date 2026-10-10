@@ -1,0 +1,10 @@
+N = int(input())
+M = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+for i in range(N):
+    if i == 0:
+        space = N-i-1
+        print(" " * space + M[i] + " " * space + " " + " " * space + M[i])
+    else:
+        space = N-i-1
+        hspace = 2*(i)-1 
+        print(" " * space + M[i] + " " * hspace + M[i] + " " * space + " " + " " * space + M[i] + " " * hspace + M[i])
