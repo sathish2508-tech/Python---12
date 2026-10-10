@@ -1,0 +1,9 @@
+s = input()
+min_letter = s[0]
+max_letter = s[0]
+for char in s:
+    if ord(char) < ord(min_letter):
+        min_letter = char
+    if ord(char) > ord(max_letter):
+        max_letter = char
+print(min_letter, max_letter)
