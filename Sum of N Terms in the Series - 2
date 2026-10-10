@@ -1,0 +1,8 @@
+F = float(input())
+N = int(input())
+sum = 0
+P = 1
+for i in range(1, N + 1):
+    sum += F ** P
+    P += 1 
+print(round(float(sum),4))
