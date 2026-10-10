@@ -1,0 +1,11 @@
+word = input()
+vowels = "AEIOUaeiou"
+sentaince = word.replace(" ","")
+lenght = len(sentaince)
+count = 0
+for char in word:
+    for vow in vowels:
+        if char == vow:
+            count += 1 
+print(count)
+print(lenght-count)
