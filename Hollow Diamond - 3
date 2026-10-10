@@ -1,0 +1,11 @@
+N = int(input())
+M = 2*(N)
+for i in range(M):
+    if i < N:
+        star = N-i
+        space = 2*(i)
+        print("* " * star + "  " * space + "* " * star)
+    else:
+        space = 2*(M-i)-2
+        star = i-(N-1)
+        print("* " * star + "  " * space + "* " * star)
