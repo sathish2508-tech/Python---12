@@ -1,0 +1,6 @@
+word = input()
+for i in word:
+    if i.isdigit():
+        uni_code = ord(i)
+        break
+print(uni_code)
