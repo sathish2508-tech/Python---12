@@ -1,0 +1,8 @@
+sentaince = input()
+value = int(input())
+word = chr(value)
+count = 0
+for char in sentaince:
+    if char == word:
+        count += 1
+print(count)
