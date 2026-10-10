@@ -1,0 +1,6 @@
+N = int(input())
+word = ""
+for i in range(N):
+    M = int(input())
+    word += chr(M)
+print(word)
