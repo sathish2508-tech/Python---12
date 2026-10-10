@@ -1,0 +1,6 @@
+word = input()
+repeat_word = ""
+for char in word:
+    char += char
+    repeat_word += char
+print(repeat_word)
