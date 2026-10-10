@@ -1,0 +1,13 @@
+string = input()
+is_second = string[-1] == "S"
+value = string[:-1] 
+con_value = int(value)
+if is_second:
+    con_hour = con_value / 3600
+    round_hour = round(con_hour,2)
+    hour = str(round_hour) + "H"
+else:
+    con_hour = con_value / 60 
+    round_hour = round(con_hour,2)
+    hour = str(round_hour) + "H"
+print(hour)
