@@ -1,0 +1,10 @@
+S = input()
+v1 = int(input())
+v2 = int(input())
+word = ""
+for i in S:
+    order = ord(i)
+    for j in range(v1, v2 + 1):
+        if order == j:
+            word += i + " "
+print(word)   
