@@ -1,0 +1,6 @@
+N = int(input())
+for i in range(N):
+    M = int(input())
+    if M % 3 != 0:
+        continue
+    print(M)
